@@ -12,7 +12,7 @@ export const getWeeklyForecast = async (lat: number, lon: number) => {
         appid: API_KEY,
         units: "metric",
         lang: "fr",
-        cnt: 40, // 5 jours x 8 prévisions par jour
+        cnt: 40, 
       },
     });
 

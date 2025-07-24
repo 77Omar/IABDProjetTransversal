@@ -21,6 +21,7 @@ import AboutScreen from "./src/screens/AboutScreen";
 
 import ForecastScreen from "./src/screens/ForecastScreen";
 import AirQualityScreen from "./src/screens/AirQualityScreen";
+import RecommendationsScreen from "./src/screens/RecommendationsScreen";
 
 const Tab = createBottomTabNavigator();
 const SettingsStack = createNativeStackNavigator();
@@ -108,6 +109,11 @@ export default function App() {
               <Ionicons name="cloudy" size={size} color={color} />
             ),
           }}
+        />
+        <Tab.Screen
+          name="Recommendations"
+          component={RecommendationsScreen}
+          options={{ tabBarButton: () => null }}
         />
       </Tab.Navigator>
     </NavigationContainer>

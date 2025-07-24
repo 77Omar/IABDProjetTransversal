@@ -1,6 +1,7 @@
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { NavigationContainer } from "@react-navigation/native";
 import BottomTabNavigator from "../components/common/BottomTabNavigator";
+import RecommendationsScreen from "../screens/RecommendationsScreen";
 
 const Tab = createBottomTabNavigator();
 
@@ -16,6 +17,7 @@ function AppNavigator() {
         <Tab.Screen name="WeatherMap" component={WeatherMapScreen} />
         <Tab.Screen name="Profile" component={ProfileScreen} />
         <Tab.Screen name="Settings" component={SettingsScreen} />
+        <Tab.Screen name="Recommendations"component={RecommendationsScreen}/>
       </Tab.Navigator>
     </NavigationContainer>
   );

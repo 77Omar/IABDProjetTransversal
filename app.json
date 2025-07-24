@@ -6,25 +6,46 @@
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
-    "newArchEnabled": true,
-    "splash": {
-      "image": "./assets/splash-icon.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
-    "ios": {
-      "supportsTablet": true
-    },
+    "plugins": [
+      [
+        "react-native-maps",
+        {
+          "apiKey": "AIzaSyCcMriNYksjISX4N6AbqnLxEkfYL0vy8bU",
+          "androidApiKey": "AIzaSyCcMriNYksjISX4N6AbqnLxEkfYL0vy8bU",
+          "iosApiKey": "AIzaSyCcMriNYksjISX4N6AbqnLxEkfYL0vy8bU"
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "compileSdkVersion": 33,
+            "targetSdkVersion": 33,
+            "buildToolsVersion": "33.0.0"
+          },
+          "ios": {
+            "deploymentTarget": "15.1"
+          }
+        }
+      ]
+    ],
+
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true,
-      "package": "com.alfaruq221.KaawTangMobile"
+      "package": "com.alfaruq221.KaawTangMobile",
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyCcMriNYksjISX4N6AbqnLxEkfYL0vy8bU"
+        }
+      }
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
+    "ios": {
+      "config": {
+        "googleMapsApiKey": "AIzaSyCcMriNYksjISX4N6AbqnLxEkfYL0vy8bU"
+      }
     }
   }
 }

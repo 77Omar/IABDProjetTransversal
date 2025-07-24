@@ -126,14 +126,14 @@ const HomeScreen = ({ navigation }) => {
         <View style={styles.actionRow}>
           <TouchableOpacity
             style={styles.actionButton}
-            onPress={() => navigation.navigate("Alertes")}
+            onPress={() => navigation.navigate("Alerts")}
           >
             <Ionicons name="alert" size={24} color="white" />
             <Text style={styles.actionText}>Alertes</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={styles.actionButton}
-            onPress={() => navigation.navigate("Conseils")}
+            onPress={() => navigation.navigate("Forecast")}
           >
             <Ionicons name="book" size={24} color="white" />
             <Text style={styles.actionText}>Conseils</Text>
